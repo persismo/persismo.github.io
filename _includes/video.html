@@ -1,0 +1,10 @@
+<div class="videoWrapper">
+  <iframe height="150%" src="https://www.youtube-nocookie.com/embed/{{ include.id }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% if include.caption %}
+<p style="text-align: center; font-size: smaller;">
+{{ include.caption }}
+</p>
+{% endif %}
+<br>
+

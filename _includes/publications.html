@@ -1,0 +1,62 @@
+{% assign year = 1980 %}
+{% assign j = site.data.pubs.publications.size %}
+
+{% for pub in site.data.pubs.publications %}
+{% if pub.year == year %}
+{% else %}
+{% assign year = pub.year %}
+{% endif %}
+{% assign uniqetopics = "" %}
+{% assign uniqetopics = pub.topics | split: ', ' | sort_natural | uniq %}
+
+{% assign imgs = "" %}
+{% assign imgs = pub.img | split: ', ' | sort_natural | uniq %}
+
+{% assign auth = pub.author %}
+
+<div class="pubs">
+
+   <div class="articles">
+
+		{% if pub.pdf %}
+			<a display:inline href="{{site.baseurl}}/files/{{pub.pdf}}" style="text-transform:capitalize;font-size:100%">
+			<span class="pubyear">
+			{{pub.title}} ({{pub.year}})
+			</span>
+			</a>
+		{% else %}
+			<span class="pubyear">{{pub.title}} ({{pub.year}})</span>
+		{% endif %}
+
+		<span style="font-size:95%">{{pub.author}}</span>
+
+		{% if pub.type == "article" %}
+			<span style="font-size:95%"><em>{{pub.journal}}</em><br></span>
+		{% elsif pub.type == "inproceeding" or pub.type == "incollection" %}
+			<span style="font-size:95%">in <em>{{pub.booktitle}}</em><br></span>
+			<span style="font-size:95%">eds. {{pub.editor}}</span>
+		{% endif %}
+
+		<div class="pubbuttons">
+		{% if pub.doi %}
+			<a href="https://doi.org/{{pub.doi}}" style="font-size:85%">doi:{{pub.doi}}</a>&nbsp;&nbsp;
+		{% endif %}
+
+		{% if pub.arxiv %}
+			<a href="https://arxiv.org/pdf/{{pub.arxiv}}.pdf" style="font-size:85%">arXiv:{{pub.arxiv}}[physics.geo-ph]</a>
+		{% endif %}
+		</div>
+
+		{% if pub.readmore %}
+			<div id="newsbtn">
+				<a href="{{ base }}/{{pub.readmore}}">READ MORE ...</a>
+			</div>
+		{% endif %}
+    <hr>
+
+    </div>
+
+
+</div>
+{% assign j = j | minus:1 %}
+{% endfor %}
