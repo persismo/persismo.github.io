@@ -20,7 +20,7 @@
 {% for menu_item in site.data.menu %}
 {%- if include.icon -%}<svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- endif -%}
 
- 		 <a class="sidebar-nav-item" href="{{ menu_item.href }}">{{ menu_item.title }}︎</a>
+ 		 <a class="sidebar-nav-item" href="{{ site.baseurl }}/{{ menu_item.href }}">{{ menu_item.title }}︎</a>
 {% endfor %}
 
         <div class="sidebar-nav-item">
