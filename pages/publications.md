@@ -1,7 +1,7 @@
 ---
 layout: default
 title:
-permalink: publications
+permalink: /publications
 ---
 
 {% include publications.html %}

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "members"
-permalink: team
+permalink: /team
 ---
 
 {% include team.html %}
