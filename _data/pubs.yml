@@ -1,0 +1,31 @@
+publications:
+#    - title:     "Supershear shock front contributions to the tsunami from the 2018 $M_w$ 7.5 Palu earthquake"
+#      author:    F. Amlani, H. S. Bhat, W. J. F. Simons, A. Schubnel, C. Vigny, A. J. Rosakis, J. Efendi, A. Elbanna & H. Z. Abidin
+#      year:    2020
+#      journal:    to appear in Nat. Geosci.
+##      pdf: 		AmlaniBhatSimons2020a.pdf
+#      doi:
+#      pubnum:     	36
+#      type:         article
+#      booktitle:	""
+#      publisher:
+#      editor:
+#      school:
+##      arxiv: 	1910.14547v3
+#      topics: "supershear, tsunami, numerical models, FCM"
+#      img: tsunami.png
+#      readmore: tsunami/
+    - title:     "Anatomy of Strike Slip Fault Tsunami-genesis"
+      author:    A. Elbanna, M. Abdelmeguid, X. Ma, F. Amlani, H. S. Bhat, C. Synolakis & A. J. Rosakis
+      year:    2020
+      journal:    subm. Proc. Natl. Acad. Sci. USA
+      pdf: 		ElbannaAbdelmeguidMa2020a.pdf
+      doi:		10.31223/X57G72
+      pubnum:
+      type:         article
+      booktitle:	""
+      publisher:
+      editor:
+      school:
+      arxiv:
+      Readmore:
