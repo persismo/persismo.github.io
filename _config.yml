@@ -2,8 +2,8 @@
 title:               PERSISMO
 tagline:
 description:
-url:                 http://lanyon.getpoole.com
-baseurl:             ''
+url: ""    # the base hostname & protocol for your site
+baseurl: ""                  # the subpath of your site, e.g. /blog
 permalink:           pretty
 
 # About/contact
