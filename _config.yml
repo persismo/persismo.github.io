@@ -2,8 +2,8 @@
 title:               PERSISMO
 tagline:
 description:
-url: ""    # the base hostname & protocol for your site
-baseurl: ""                  # the subpath of your site, e.g. /blog
+url: ''    # the base hostname & protocol for your site
+baseurl: ''                  # the subpath of your site, e.g. /blog
 permalink:           pretty
 
 # About/contact
@@ -25,9 +25,3 @@ kramdown:
   entity_output: as_char
   hard_wrap: false
 
-defaults:
-  -
-    scope:
-      path: "" # any file that's not a post will be a "page" layout by default
-    values:
-      hide: 0

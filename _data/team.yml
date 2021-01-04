@@ -70,3 +70,11 @@ phd:
       post: PhD Canidate
       dates: March 2021
       funded: 1
+masters:
+    - name: "Roxane Ferry"
+      image: 
+      web: 
+      email:
+      post: 
+      dates: January 2021
+      funded: 0

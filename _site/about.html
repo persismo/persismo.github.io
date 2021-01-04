@@ -14,7 +14,7 @@
   </title>
 
   
-  <link rel="canonical" href="http://localhost:4000/about">
+  <link rel="canonical" href="/http://localhost:4000/about">
   
 
   <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
@@ -33,33 +33,6 @@
 
 
   <body>
-    <script>
-//open external links in a new window
-function external_new_window() {
-    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
-    var b = c[a];
-    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
-    }
-}
-//open PDF links in a new window
-function pdf_new_window ()
-{
-    if (!document.getElementsByTagName) return false;
-    var links = document.getElementsByTagName("a");
-    for (var eleLink=0; eleLink < links.length; eleLink ++) {
-    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
-        links[eleLink].onclick =
-        function() {
-            window.open(this.href);
-            return false;
-        }
-    }
-    }
-} 
-pdf_new_window()
-external_new_window();
-</script>
-
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
@@ -79,11 +52,11 @@ external_new_window();
     <span aria-hidden="true">Home</span>
     </a>
 
-<a class="sidebar-nav-item" href="//publications/">Publications︎</a>
-<a class="sidebar-nav-item" href="//posts/">Posts︎</a>
-<a class="sidebar-nav-item" href="//team/">Members︎</a>
-<a class="sidebar-nav-item" href="//about/">About︎</a>
-<a class="sidebar-nav-item" href="//tags/">Tags︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/publications/">Publications︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/posts/">Posts︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/team/">Members︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/about/">About︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/tags/">Tags︎</a>
 
 
         <div class="sidebar-nav-item">
@@ -126,33 +99,6 @@ external_new_window();
 <script src="/public/js/fitvideo.js"></script>
 <script>
 $("main").fitVids();
-</script>
-
-    <script>
-//open external links in a new window
-function external_new_window() {
-    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
-    var b = c[a];
-    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
-    }
-}
-//open PDF links in a new window
-function pdf_new_window ()
-{
-    if (!document.getElementsByTagName) return false;
-    var links = document.getElementsByTagName("a");
-    for (var eleLink=0; eleLink < links.length; eleLink ++) {
-    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
-        links[eleLink].onclick =
-        function() {
-            window.open(this.href);
-            return false;
-        }
-    }
-    }
-} 
-pdf_new_window()
-external_new_window();
 </script>
 
 

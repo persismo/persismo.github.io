@@ -3,6 +3,7 @@ layout: post
 title: Text and Typography
 math: true
 tags: [Website]
+hide: 0
 ---
 
 This post is to show Markdown syntax rendering.
