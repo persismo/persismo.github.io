@@ -18,3 +18,18 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Hide", name: "hide", widget: "number", default: 1, value_type: "int", min: 0, max: 101 }
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Publications"
+        name: "publications"
+        file: "_data/pubs.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: title, name: title, widget: string}
+              - {label: author, name: author, widget: string}
