@@ -14,12 +14,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
       - {label: "Math", name: "math", widget: "boolean", default: false}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Hide", name: "hide", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Author"
-        name: "author"
-        widget: "list"
-        allow_add: false
-        default: ['Harsha S. Bhat', 'Michelle Almakiri']      
