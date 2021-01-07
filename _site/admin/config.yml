@@ -22,4 +22,4 @@ collections:
         name: "author"
         widget: "list"
         allow_add: false
-        default: ['Harsha S. Bhat','Michelle Almakiri']      
+        default: ['Harsha S. Bhat', 'Michelle Almakiri']      
