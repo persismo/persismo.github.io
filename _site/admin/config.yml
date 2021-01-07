@@ -4,7 +4,7 @@ backend:
   branch: main
   site_domain: persismo.netlify.com
 publish_mode: editorial_workflow  
-media_folder: "images/posts"
+media_folder: "images"
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
