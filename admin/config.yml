@@ -27,8 +27,8 @@ collections:
         name: "publications"
         file: "_data/pubs.yml"
         fields:
-          - label: "Navigation Items"
-            name: "items"
+          - label: "publications"
+            name: "publications"
             widget: "list"
             fields:
               - {label: title, name: title, widget: string}
