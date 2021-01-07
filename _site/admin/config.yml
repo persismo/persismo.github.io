@@ -16,5 +16,42 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Math", name: "math", widget: "boolean", default: false}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Hide", name: "hide", widget: "number", default: 1, value_type: "int", min: 0, max: 101 }
+      - {label: "Hide", name: "hide", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Author"
+        name: "author"
+        widget: "list"
+        allow_add: false
+        default: ["Harsha S. Bhat","Michelle Almakiri"]      
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Publications"
+        name: "publications"
+        file: "_data/pubs.yml"
+        fields:
+          - label: "publications"
+            name: "publications"
+            widget: "list"
+            fields:
+              - {label: title, name: title, widget: string}
+              - {label: author, name: author, widget: string}
+              - {label: type, name: type, widget: string}
+              - {label: journal, name: journal, widget: string}
+              - {label: year, name: year, widget: number, default: 2021, value_type: "int"}
+              - {label: doi, name: doi, widget: string}
+              - {label: editor, name: editor, widget: string}
+              - {label: publisher, name: publisher, widget: string}
+              - {label: booktitle, name: booktitle, widget: string}
+              - label: "pdf"
+                name: "pdf"
+                widget: "image"
+                media_folder: /files
+                default: null
+                media_library:
+                  config:
+                    multiple: true
+              - {label: arxiv, name: arxiv, widget: string}
+              - {label: school, name: school, widget: string}

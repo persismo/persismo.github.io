@@ -18,6 +18,11 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Hide", name: "hide", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Author"
+        name: "author"
+        widget: "list"
+        allow_add: false
+        default: ["Harsha S. Bhat","Michelle Almakiri"]      
   - name: "config"
     label: "Config"
     editor:

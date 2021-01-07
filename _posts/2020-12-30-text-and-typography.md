@@ -5,6 +5,7 @@ math: true
 tags:
   - Website
 hide: 0
+author: Harsha S. Bhat
 ---
 
 This post is to show Markdown syntax rendering.
