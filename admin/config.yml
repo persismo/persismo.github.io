@@ -40,6 +40,13 @@ collections:
               - {label: editor, name: editor, widget: string}
               - {label: publisher, name: publisher, widget: string}
               - {label: booktitle, name: booktitle, widget: string}
-              - {label: editor, name: editor, widget: string}
+              - label: "pdf"
+                name: "pdf"
+                widget: "image"
+                media_folder: /files
+                default: null
+                media_library:
+                  config:
+                    multiple: true
               - {label: arxiv, name: arxiv, widget: string}
               - {label: school, name: school, widget: string}
