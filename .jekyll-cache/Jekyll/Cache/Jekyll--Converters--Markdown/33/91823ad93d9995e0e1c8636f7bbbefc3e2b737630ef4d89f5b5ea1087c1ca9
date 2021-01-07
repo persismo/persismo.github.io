@@ -1,4 +1,4 @@
-I"ÄI<p>This post is to show Markdown syntax rendering.</p>
+I"xI<p>This post is to show Markdown syntax rendering.</p>
 
 <h2 id="titles">Titles</h2>
 <hr />
@@ -140,7 +140,7 @@ Animation of a supershear rupture
 
 <p>Embed youtube videos as below. You need to get the video id for this.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include video.html id="hMHSsEobbz0" caption="Animation of a supershear rupture" %}
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include video.html id="hMHSsEobbz0" caption="Animation of a supershear rupture" %}
 </code></pre></div></div>
 
 <h2 id="mathematics">Mathematics</h2>
@@ -156,7 +156,7 @@ Animation of a supershear rupture
 
 <p>Or in-line latex as below</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When $$ a \ne 0 $$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When $$ a \ne 0 $$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
 
  $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 </code></pre></div></div>
@@ -188,13 +188,13 @@ Animation of a supershear rupture
 
 <h2 id="inline-code">Inline code</h2>
 
-<p>This is an example of <code class="language-plaintext highlighter-rouge">Inline Code</code>.</p>
+<p>This is an example of <code class="highlighter-rouge">Inline Code</code>.</p>
 
 <h2 id="code-block">Code block</h2>
 
 <h3 id="common">Common</h3>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a common code snippet, without syntax highlight and line number.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a common code snippet, without syntax highlight and line number.
 </code></pre></div></div>
 
 <h3 id="specific-languages">Specific Languages</h3>
