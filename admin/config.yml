@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: persismo/persismo.github.io
-  branch: master
+  branch: main
   site_domain: persismo.netlify.com
 publish_mode: editorial_workflow  
 media_folder: "images/posts"
