@@ -2,7 +2,6 @@ publications:
   - pubnum: null
     author: A. Elbanna, M. Abdelmeguid, X. Ma, F. Amlani, H. S. Bhat, C. Synolakis &
       A. J. Rosakis
-    Readmore: null
     editor: null
     booktitle: ""
     pdf: ElbannaAbdelmeguidMa2020a.pdf
@@ -14,6 +13,3 @@ publications:
     publisher: null
     year: 2020
     doi: 10.31223/X57G72
-items:
-  - title: Test pub
-    author: Harsha S. Bhat
