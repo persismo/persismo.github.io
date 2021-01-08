@@ -19,3 +19,10 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Hide", name: "hide", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Images"
+        name: "image"
+        widget: "image"
+        default: null
+        media_library:
+          config:
+            multiple: true      
