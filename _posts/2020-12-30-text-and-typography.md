@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Text and Typography
+author: Harsha S. Bhat
 math: true
 tags:
   - Website
 hide: 0
-author: Harsha S. Bhat
 ---
 
 This post is to show Markdown syntax rendering.
@@ -47,8 +47,8 @@ Fluttering and dancing in the breeze.
 ### Unordered list
 
 - Chapter
-	- Setcion
-      - Paragraph
+	- Section
+           - Paragraph
 
 ### Task list
 
