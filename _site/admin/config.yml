@@ -4,7 +4,16 @@ backend:
   branch: main
   site_domain: persismo.netlify.com
 publish_mode: editorial_workflow  
-media_folder: "images/posts"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: persismo
+    api_key: 262715164179826
+    default_transformations:
+      - - fetch_format: auto
+          width: 800
+          quality: auto
+          crop: scale
 collections:
   - name: "post" # Used in routes, e.g. /admin/collections/blog
     label: "Post" # Used in the UI
@@ -18,11 +27,16 @@ collections:
       - {label: "Math", name: "math", widget: "boolean", default: false}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Hide", name: "hide", widget: "boolean", default: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Images"
-        name: "image"
-        widget: "image"
-        default: null
+      - label: 'Images'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
         media_library:
           config:
-            multiple: true      
+            default_transformations:
+              - fetch_format: auto
+                width: 800    
+                quality: auto
+                crop: scale
+      - {label: "Body", name: "body", widget: "markdown"}
