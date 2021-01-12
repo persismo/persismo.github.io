@@ -47,6 +47,13 @@ phd:
       post: PhD Canidate
       dates: October 2018
       funded: 0
+    - name: "Léo Petit"
+      image: leo.jpg
+      web: https://www.researchgate.net/profile/Leo_Petit
+      email:
+      post: PhD Canidate
+      dates: October 2019
+      funded: 0
     - name: "Joseph M. Flores Cuba"
       image: joseph.jpg
       web: https://jflorescuba.wixsite.com/mysite
