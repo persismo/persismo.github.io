@@ -6,7 +6,7 @@ math: true
 tags:
   - Website
   - Netlify
-hide: 0
+hide: false
 image: /images/posts/8092e9f0-a258-4e2a-8eba-e18ce9daf93e.png
 ---
 Added this post via Netlify CMS (Content Management System). To add a post, go to

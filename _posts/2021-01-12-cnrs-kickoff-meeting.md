@@ -5,7 +5,7 @@ author: Harsha S. Bhat
 math: false
 tags:
   - Administative
-hide: 0
+hide: false
 ---
 Administrative Kickoff meeting for PERSISMO took place online on Jan. 12, 2021.
 

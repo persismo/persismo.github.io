@@ -10,17 +10,11 @@ hide: false
 Michelle gave an excellent presentation of her PhD work today. She talked about the role of injection pressure and rate on induced seismicity. She also discussed her work on looking at diffusivity evolution with slip and comparison with laboratory experiments.
 
 ### Upcoming Meetings
-
 | Date                         | Speaker          | Location |
-|:-----------------------------|:-----------------|:---------|
-| Jan 21 | Lucile Bruhat     | ISTEP  |
-| Jan 28 | Louise Jeandet     | ENS  |
-| Jan 29 (16h00)| Harsha S. Bhat (HDR)     | Zoom  |
-| Feb 02| Marion Thomas     | Zoom  |
-| Feb 04 | Ekeabino Momoh     | ISTEP  |
-| Feb 11 | Harsha S. Bhat     | ENS  |
-| Feb 18 | Joseph Flores Cuba     | ISTEP  |
-| Feb 25 | Roxane Ferry     | ENS  |
+|:-----------------------------|:-----------------|---------:|
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
 
 ### References
 
