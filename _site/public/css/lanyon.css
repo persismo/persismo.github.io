@@ -42,11 +42,11 @@ body {
 
 html {
   font-size: 1rem;
-  font-family: "Poppins", Georgia, "Times New Roman", serif;
+font-family: 'Roboto Mono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins";
+  font-family: "'Roboto Mono', monospace;
   font-weight: 400;
   color: black;
   letter-spacing: -.025rem;
