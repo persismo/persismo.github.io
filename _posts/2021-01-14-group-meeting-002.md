@@ -7,7 +7,7 @@ tags:
   - GroupMeeting
 hide: false
 ---
-Michelle gave an excellent presentation of her PhD work today. She talked about the role of injection pressure and rate on induced seismicity. She also discussed her work on looking at diffusivity evolution with slip and comparison with laboratory experiments.
+Michelle gave an excellent presentation of her PhD work today at Salle Serre. She talked about the role of injection pressure and rate on induced seismicity. She also discussed her work on looking at diffusivity evolution with slip and comparison with laboratory experiments.
 
 ### Upcoming Meetings
 
