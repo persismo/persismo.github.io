@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group Meeting 002
+title: Group Meeting
 author: Harsha S. Bhat
 math: false
 tags:
