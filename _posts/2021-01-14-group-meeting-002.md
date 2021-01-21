@@ -9,6 +9,9 @@ hide: false
 ---
 Michelle gave an excellent presentation of her PhD work today at Salle Serre. She talked about the role of injection pressure and rate on induced seismicity. She also discussed her work on looking at diffusivity evolution with slip and comparison with laboratory experiments.
 
+The slides are available [here](https://www.dropbox.com/s/atnrvnzalh3c7m0/Presentation_PhD-Work.pdf?dl=0).
+
+
 ### Upcoming Meetings
 
 | Date                         | Speaker          | Location |
