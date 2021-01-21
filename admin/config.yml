@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: persismo/persismo.github.io
+  repo: persismo/website
   branch: main
   site_domain: persismo.netlify.com
 publish_mode: editorial_workflow  

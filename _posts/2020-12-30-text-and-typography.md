@@ -6,6 +6,9 @@ math: true
 tags:
   - Website
 hide: false
+bibliography: /Users/bhat/Dropbox/Public/CollectedPapers/MasterBibliography.bib
+csl: /Users/bhat/Dropbox/Public/CollectedPapers/csl/agu.csl
+
 ---
 
 This post is to show Markdown syntax rendering.
@@ -95,8 +98,8 @@ Moon
 
 Or leave it empty and use the [link text itself].
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
+URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <http://www.example.com> and sometimes
 example.com (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
@@ -153,7 +156,7 @@ When $$ a \ne 0 $$, there are two solutions to $$ax^2 + bx + c = 0$$ and they ar
  $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 ```
 
-When $$ a \ne 0 $$, there are two solutions to $$ax^2 + bx + c = 0$$ and they are
+When $$a \ne 0$$ , there are two solutions to $$ax^2 + bx + c = 0$$ and they are
 
  $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
@@ -186,6 +189,10 @@ $$
 ## Inline code
 
 This is an example of `Inline Code`.
+
+## Citation
+
+Citing my own paper [@bhat2004]. @amazigo1977
 
 
 ## Code block
@@ -272,3 +279,5 @@ grid on
 
 [^footnote]: The footnote source
 [^fn-nth-2]: The 2nd footnote source
+
+# References
