@@ -45,7 +45,14 @@
 <ul>
 {% for post in site.posts %}
 {% if post.tags contains tag %}
-<small>{{ post.date | date_to_string }}</small><a href="{{ post.url }}">
+<small>
+{% if post.bdate %}
+{{ post.bdate | date_to_string }}
+{% else %}
+{{ post.date | date_to_string }}
+{% endif %}
+</small>
+<a href="{{ post.url }}">
 {{ post.title }}
 </a><br>
 {% endif %}
