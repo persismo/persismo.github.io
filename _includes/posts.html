@@ -1,6 +1,20 @@
 {% for post in site.posts  %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+{% capture this_year %}
+{% if post.bdate %}
+{{ post.bdate | date: "%Y" }}
+{% else %}
+{{ post.date | date: "%Y" }}
+{% endif %}
+{% endcapture %}
+
+{% capture next_year %}
+{% if post.previous.bdate %}
+{{ post.previous.bdate | date: "%Y" }}
+{% else %}
+{{ post.previous.date | date: "%Y" }}
+{% endif %}
+{% endcapture %}
+
 
 {% if forloop.first %}
 <h3 id="{{ this_year }}-ref">{{this_year}}</h3>
@@ -8,7 +22,14 @@
 {% endif %}
 
 <div>
-<span class="date day">{{ post.date | date: "%a %d-%b" }}</span>
+<span class="date day">
+{% if post.bdate %}
+{{ post.bdate | date: "%a %d %b" }}
+{% else %}
+{{ post.date | date: "%a %d %b" }}
+{% endif %}
+</span>
+
 <a href="{{ post.url }}">{{ post.title }}</a>
 </div>
 

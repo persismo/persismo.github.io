@@ -3,7 +3,8 @@ layout: post
 title: Group Meeting 004
 author: Michelle Almakari
 math: false
-tags: []
+tags:
+  - GroupMeeting
 hide: false
 ---
 Louise presented and discussed her current work on the conditions of the loading stress field along a fault to satisfy and properly model strike-slip faulting. 

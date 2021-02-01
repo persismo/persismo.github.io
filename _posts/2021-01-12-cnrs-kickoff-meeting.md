@@ -6,6 +6,7 @@ math: false
 tags:
   - Administative
 hide: false
+bdate: 2021-02-12
 ---
 Administrative Kickoff meeting for PERSISMO took place online on Jan. 12, 2021.
 

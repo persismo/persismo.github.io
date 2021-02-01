@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Group Meeting 003 (21 Jan 2021)
+title: Group Meeting 003
 author: Michelle Almakari
 math: false
-tags: []
+tags:
+  - GroupMeeting
 hide: false
 ---
 Lucile gave a very interesting talk on her current work on the effect of the surface on the reverse faults (especially fault opening), presenting the results issued from a numerical modeling study. 
