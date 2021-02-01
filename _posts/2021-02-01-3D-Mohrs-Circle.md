@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 3D Mohr's Circle and Coulomb Stress Change
+bdate: February 1, 2021 12:00 AM
 author: Harsha S. Bhat
 math: true
 tags:
@@ -8,7 +9,7 @@ tags:
 hide: false
 ---
 
-I am basing this on my old notes and _Bhat et al. (2007)_.
+I am basing this on my old notes and _Bhat et al. (2007)_. Contact me for the relevant Matlab codes.
 
 Assume, without loss of any generality, that the co-ordinate system is
 aligned with the principal stresses, $$\sigma_1, \sigma_2, \sigma_3$$. Let $$ (n_1,n_2,n_3) $$ be the components 
