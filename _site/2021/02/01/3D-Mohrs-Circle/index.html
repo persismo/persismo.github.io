@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      3D Mohr's Circle and Coulomb Stress Change &middot; PERSISMO
+    
+  </title>
+
+  
+  <link rel="canonical" href="/http://localhost:4000/2021/02/01/3D-Mohrs-Circle/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/team.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/pubs.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/tags.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+
+
+  <body class="layout-reverse">
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <img src="/images/site/erc.jpg" alt="avatar" style="border-radius: 50%; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;">
+
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">
+    <span aria-hidden="true">Home</span>
+    </a>
+
+<a class="sidebar-nav-item" href="http://localhost:4000/publications/">Publications︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/team/">Members︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/about/">About︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/posts/">Posts︎</a>
+<a class="sidebar-nav-item" href="http://localhost:4000/tags/">Tags︎</a>
+
+
+        <div class="sidebar-nav-item">
+        <a  href="https://github.com/persismo" ><i class="fa fa-github fa-1x"></i></a>&nbsp;&nbsp;
+        <a  href="https://twitter.com/persismo" ><i class="fa fa-twitter fa-1x"></i></a>
+        </div>
+
+  </nav>
+
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">PERSISMO</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">3D Mohr's Circle and Coulomb Stress Change</h1>
+  <span class="post-date"> by Harsha S. Bhat | <a href="https://persismo.netlify.app/admin/#/collections/post/entries/2021-02-01-3d-mohr-s-circle-and-coulomb-stress-change">EDIT</a></span>
+
+  <p>I am basing this on my old notes and <em>Bhat et al. (2007)</em>.</p>
+
+<p>Assume, without loss of any generality, that the co-ordinate system is
+aligned with the principal stresses, \(\sigma_1, \sigma_2, \sigma_3\). Let \((n_1,n_2,n_3)\) be the components 
+of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let \(\sigma_1 \ge \sigma_2 \ge \sigma_3\).</p>
+
+<p><img src="/images/posts/mohrsetup.png" alt="3D Mohr's circle" />
+<em>Geometry</em></p>
+
+<p>Then, the normal and shear tractions are given by,</p>
+
+\[\sigma_n = \sigma_{ij}n_i n_j \\
+\tau_n = \sqrt{(\sigma_{ij}n_j)^2 - \sigma_n^2} \\
+n_1^2 + n_2^2 + n_3^2 = 1\]
+
+<p>Note here that \(\tau\) is the magnitude of the shear traction vector.
+The above is a set of linear simultaneous equations in \(n_1^2, n_2^2\) and \(n_3^2\). The 
+solution to which is trivial to obtain.</p>
+
+\[n_1^2 = \dfrac{\tau_n^2 + 
+(\sigma_n-\sigma_2)(\sigma_n-\sigma_3)}{(\sigma_1-\sigma_2)(\sigma_1-\sigma_3)} \ge 0 \\
+n_2^2 = \dfrac{\tau_n^2 + 
+(\sigma_n-\sigma_3)(\sigma_n-\sigma_1)}{(\sigma_2-\sigma_3)(\sigma_2-\sigma_1)} \ge 0 \\
+n_3^2 = \dfrac{\tau_n^2 + 
+(\sigma_n-\sigma_1)(\sigma_n-\sigma_2)}{(\sigma_3-\sigma_1)(\sigma_3-\sigma_2)} \ge 0 \\\]
+
+<p>Now note that, \(\sigma_1 \ge \sigma_2 \ge \sigma_3\). Thus we get,</p>
+
+\[\tau_n^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3) \ge 0 \\
+\tau_n^2 + (\sigma_n-\sigma_3)(\sigma_n-\sigma_1) \le 0 \\
+\tau_n^2 + (\sigma_n-\sigma_1)(\sigma_n-\sigma_2) \ge 0 \\\]
+
+<p>Each of the above equations represents as 2D Mohr’s circle when equated to zero. 
+For example, \(\tau^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3)  = 0\) represents a
+Mohr’s circle in 2D whose end points are \((\sigma_2,\sigma_3)\). This is the smallest Mohr’s circle.
+Thus the first equation is true everywhere outside the circle. The second equation is 
+true everywhere inside the Mohr’s circle whose end points are \((\sigma_1,\sigma_3)\). 
+This is the largest Mohr’s circle. Following these lines of argument we thus can show that, to satisfy all 
+of the above equations simultaneously, any point \((\sigma_n,\tau_n)\) must lie in the region bounded
+by the three circles, the green shaded region below.</p>
+
+<p><img src="/images/posts/mohr.png" alt="3D Mohr's circle" />
+<em>3D Mohr’s Circle. Image from <a href="https://en.wikipedia.org/wiki/Mohr%27s_circle">Wikipedia</a></em></p>
+
+<h2 id="coulomb-stress-on-fault-planes-of-known-orientation">Coulomb Stress on Fault Planes of Known Orientation</h2>
+
+<p>Consider a fault plane $\Sigma$ lying in a 3D space. Let
+$x, y$ and $z$ form a right-handed co-ordinate system
+where the surface of the earth is in the $x-y$ plane and the
+$z$ axis points vertically upwards from the earth’s surface. The
+strike direction, $\vec{s}$, is chosen along the surface trace of the
+fault plane such that the dip, defined below, is $\le 90^{0}$. Let
+$\vec{s}$ make an angle of $\phi$ with the $x$ axis (measured
+positive for counterclockwise rotation about $z$) and let 
+$\gamma$ be the dip of the faulting plane, measured positive for
+right-handed rotation about the strike direction (i. e., angle from
+earth’s surface at right of the strike direction to the fault plane).
+The positive strike direction is always chosen such that
+$0&lt;\gamma\le90^{0}$. Let $\Sigma^+$ and $\Sigma^-$ to be the positive
+and the negative side of the fault plane respectively [Figure A1a];
+$\Sigma^-$ is the footwall (or is assigned arbitrarily if $\gamma =
+90^{0}$).</p>
+
+<p>Let $\vec{n}$ be the unit normal to the fault plane directed from
+$\Sigma^-$ to $\Sigma^+$. This will imply that any traction calculated
+with respect to this vector represents the action on the $\Sigma^-$
+plane due to the $\Sigma^+$ plane.</p>
+
+<p><img src="/images/posts/faultplane.jpg" alt="" /></p>
+
+<p>Looking at the above figure the $z$ axis component of $\vec{n}$ is
+$\cos\gamma$. The component of $\vec{n}$ on the $x-y$ plane is
+then $\sin\gamma$. Since this component is perpendicular to $\vec{s}$,
+the strike vector, the projections of $\vec{n}$ on the \textbf{x} and
+\textbf{y} axes are $\sin\phi\sin\gamma$ and $-\cos\phi\sin\gamma$
+respectively. Thus</p>
+
+\[\begin{equation} \vec{n} =
+(\sin\phi\sin\gamma)\hat{i}+(-\cos\phi\sin\gamma)\hat{j}+(\cos\gamma)\
+hat{k} \end{equation}\]
+
+<p>The unit vector acting along the strike direction is then
+given by</p>
+
+\[\begin{equation} \vec{s} =
+(\cos\phi)\hat{i}+(\sin\phi)\hat{j}+(0)\hat{k} \end{equation}\]
+
+<p>Then the vector acting along the updip direction is simply
+given by $\vec{d} = \vec{n}\times\vec{s}$ which is</p>
+
+\[\begin{equation}
+\vec{d} =
+(-\sin\phi\cos\gamma)\hat{i}+(\cos\phi\cos\gamma)\hat{j}+(\sin\gamma)
+\hat{k} \end{equation}\]
+
+<p>The traction acting on the fault plane is then given by
+$T_i=\sigma_{ji}n_j$ where $\sigma_{ij}$ are the components of the
+stress tensor (tensile positive) in the original $x-y-z$
+coordinate system. The normal stress on the fault plane is then given by
+$\sigma=T_in_i$.</p>
+
+<p>The maximum shear stress acting on the plane is given by $\tau_{max} =
+\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_is_i)$ and $\tau_{d} (=
+T_id_i)$ are the shear stresses acting along the strike and the updip
+directions respectively. Define rake angle ($\lambda$) as the angle
+between the unit slip vector, $\vec{\xi}$, (slip vector $\Delta \vec{u}$
+is defined = $\vec{u}^{+}-\vec{u}^{-}$ where $\vec{u}$ is the
+displacement vector) and $\vec{s}$, measured positive from the strike
+direction to that of $\vec{\xi}$ for counterclockwise rotation about the
+$\vec{n}$ direction.</p>
+
+<p>In terms of the rake angle ($\lambda$) the unit slip vector $\vec{\xi}$
+is given by $\vec{\xi}=\vec{s}\cos\lambda+\vec{d}\sin\lambda$ and the
+shear stress in the slip direction is given by $\tau = T_i\xi_i$.</p>
+
+<p>It is then clear that a rake angle of $0$ or $\pi$ would
+result in pure left or right lateral faulting respectively and a rake
+angle of $-\pi/2$ or $\pi/2$ would result in pure normal or thrust
+faulting respectively.</p>
+
+<p>The Coulomb Stress (CS) is now given by  $CS=\tau+f_{s}\sigma$ where
+$f_{s}$ is the static friction coefficient of the fault plane. $\tau$ is
+positive when slip occurs in the direction of the unit slip vector and
+$\sigma$ is positive when the fault is unclamped.</p>
+
+<p>The above methodology may be used In circumstances for which the fault
+plane is given and the geological sense of motion along it is known and
+is assumed to be active after stress change.</p>
+
+<h2 id="coulomb-stress-cs-on-optimal-mohr-coulomb-planes">Coulomb Stress (CS) on optimal Mohr-Coulomb planes</h2>
+
+<p>From Mohr-Coulomb failure theory it is known that for optimally oriented
+planes for failure (planeson which CS is maximum) the unit normals make
+angles of $\beta = \pm(\pi/4+\varphi/2)$ (where $\tan\varphi=f_{s}$)
+with the maximum compressive stress direction, and their line of
+intersection aligns with the intermediate principal stress direction.
+The slip vectors of the conjugate planes are in the plane comprising the
+maximum and minimum compressive stress directions.</p>
+
+<p><img src="/images/posts/optimalplanes.jpg" alt="" /></p>
+
+<p>The shear and normal stresses on these planes are then given
+by</p>
+
+\[\begin{eqnarray} \tau &amp;=&amp; \frac{(\sigma_1-\sigma_3)}{2}\sin2\beta
+\nonumber \\ \sigma &amp;=&amp;
+\frac{(\sigma_1+\sigma_3)}{2}+\frac{(\sigma_1-\sigma_3)}{2}\cos2\beta
+\end{eqnarray}\]
+
+<p>where $\sigma_1\ge\sigma_2\ge\sigma_3$ are the principal
+stresses, and (like $\sigma$) are positive if tensile.</p>
+
+<h3 id="application-to-plane-strain-in-the-x-y-plane-aligned-with-the-earths-surface">Application to plane strain in the $x-y$ plane aligned with the earth’s surface</h3>
+
+<h4 id="case-1-sigma_1sigma_zz-least-compressive-stress-normal-to-the-surface">Case 1: $\sigma_1=\sigma_{zz}$ (least compressive stress normal to the surface).</h4>
+
+<p>This case results in pure thrust faulting and both the conjugate planes are thrust faults. The strike of
+the two planes are along $\pm\vec{\nu_2}$ where $\vec{\nu_2}$ is the
+eigen-vector corresponding to the intermediate principal stress,
+$\sigma_2$. The dip is $\pi/4-\varphi/2$.</p>
+
+<h4 id="case-2-sigma_2sigma_zz-least-compressive-stress-parallel-to-the-surface">Case 2: $\sigma_2=\sigma_{zz}$ (least compressive stress parallel to the surface)</h4>
+
+<p>This case results in
+strike-slip faulting and the conjugate planes strike left laterally and
+right laterally. The strike of the two planes makes an angle of
+$\pm(\pi/4-\varphi/2)$ with the maximum compressive stress ($\sigma_3$)
+direction. The dip is $\pi/2$.</p>
+
+<h4 id="case-3-sigma_3sigma_zz-most-compressive-stress-normal-to-the-surface">Case 3: $\sigma_3=\sigma_{zz}$ (most compressive stress normal to the surface).</h4>
+
+<p>This case results in pure normal
+faulting and both the conjugate planes are normal faults. The strike of
+the two planes are given by $\pm\vec{\nu_2}$ where $\vec{\nu_2}$ is the
+eigen-vector corresponding to the intermediate principal stress,
+$\sigma_2$. The dip is $\pi/4+\varphi/2$.</p>
+
+<h3 id="determination-of-the-change-in-coulomb-stress-deltacs-due-to-an-earthquake-rupture">Determination of the change in Coulomb Stress ($\Delta$CS) due to an earthquake rupture</h3>
+
+<h4 id="case-when-fault-plane-and-candidate-direction-of-slip-is-known">Case when fault plane and candidate direction of slip is known</h4>
+
+<p>Let $\sigma_{ij}^{0}$ be the initial stress state (in the $x-y-z$ system) and
+$\Delta\sigma_{ij}$ be the perturbation to the stress-field due to an
+earthquake rupture. Then $\Delta CS$ is given by $\Delta CS =
+\Delta\tau+f_{s}\Delta\sigma$ where $\Delta\tau$ and $\Delta\sigma$ are
+given by $\Delta\tau=\Delta\sigma_{ij}n_i \xi_j$ and $\Delta\sigma =
+\Delta\sigma_{ij}n_in_j$. The vectors $\vec{n}$ and $\vec{\xi}$ are
+defined in the first section.</p>
+
+<h4 id="case-when-fault-planes-are-optimally-oriented">Case when fault planes are optimally oriented</h4>
+
+<p>We first begin by determining the conjugate failure planes for the total
+stress state i.e. for $\sigma_{ij}=\sigma_{ij}^0+\Delta\sigma_{ij}$. Let
+$\vec{\nu_1}$ and $\vec{\nu_3}$ be the eigen-vectors associated with the
+minimum and maximum principal stresses respectively of the total stress
+state. The failure plane normals are then obtained by rotating
+$\vec{\nu_3}$ about $\vec{\nu_2}$ by an angle of $\pm(\pi/4+\varphi/2)$.
+Let $\vec{n_1}$ and $\vec{n_2}$ be the outward unit normals to the
+conjugate planes and $\vec{ \xi_1}$ and $\vec{\xi_2}$ be the unit
+vectors in the direction of slip on the $\Sigma^+_{1/2}$ planes
+respectively. Then</p>
+
+\[\begin{eqnarray} \vec{\xi_1} &amp;=&amp; \vec{\nu_3}\cos \ (\pi/4-\varphi/2) +
+\vec{\nu_1}\sin \ (\pi/4-\varphi/2)\\ \vec{n_1} &amp;=&amp; -\vec{\nu_3}\cos \
+(\pi/4+\varphi/2) + \vec{\nu_1}\sin \ (\pi/4+\varphi/2) \\ \vec{\xi_2}
+&amp;=&amp; \vec{\nu_3}\cos \ (\pi/4-\varphi/2) - \vec{\nu_1}\sin \
+(\pi/4-\varphi/2)\\ \vec{n_2} &amp;=&amp; -\vec{\nu_3}\cos \ (\pi/4+\varphi/2) -
+\vec{\nu_1}\sin \ (\pi/4+\varphi/2) \end{eqnarray}\]
+
+<p>$\Delta CS$ is then calculated for each of the optimal planes
+by $\Delta CS = \Delta\tau+f_{s}\Delta\sigma$ where $\Delta\tau$ and
+$\Delta\sigma$ are given by $\Delta\tau=\Delta\sigma_{ij}n_i\xi_j$ and
+$\Delta\sigma = \Delta\sigma_{ij}n_in_j$. $n_i$, $\xi_i$ are the
+components of the unit normal and unit slip vectors respectively for
+each of the optimal planes. The maximum of the two $\Delta CS$ values is
+then sometimes identified as the plane more likely to slip due to an
+earthquake rupture, although we see no firm basis for that. However,
+this is not the only way the change in Coulomb stress on optimal planes
+be identified. The different conjugate fault plane orientations can be
+determined for stress states both before ($\sigma_{ij}^{0}$) and after
+the rupture ($\sigma_{ij}$) and then the Coulomb stress changes can be
+evaluated as</p>
+
+\[\Delta CS = {CS}_{optimal}^{\sigma^{0}+\Delta\sigma}-{CS}_{optimal}^{\sigma^{0}}\]
+
+<p>This would give a unique value of $\Delta CS$ regardless of the optimal
+plane chosen in each of the stress states.</p>
+
+</div>
+
+<hr>
+
+<h3> TAGS </h3>
+<div class="tag">
+  <a href="/tags/#theory"> Theory</a>
+</div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+       
+
+<script type="text/javascript">
+
+  window.MathJax = {
+  CommonHTML: { linebreaks: { automatic: true } },
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+
+      MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<style>
+.MathJax_Display {
+    padding-bottom:1em;
+    overflow-x:auto;
+    overflow-y: auto;
+    max-width: 100%;
+</style>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
+<script data-require="jquery" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="/public/js/fitvideo.js"></script>
+<script>
+$("main").fitVids();
+</script>
+
+			 <script>
+//open external links in a new window
+function external_new_window() {
+    for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
+    }
+}
+//open PDF links in a new window
+function pdf_new_window ()
+{
+    if (!document.getElementsByTagName) return false;
+    var links = document.getElementsByTagName("a");
+    for (var eleLink=0; eleLink < links.length; eleLink ++) {
+    if ((links[eleLink].href.indexOf('.pdf') !== -1)||(links[eleLink].href.indexOf('.doc') !== -1)||(links[eleLink].href.indexOf('.docx') !== -1)) {
+        links[eleLink].onclick =
+        function() {
+            window.open(this.href);
+            return false;
+        }
+    }
+    }
+} 
+pdf_new_window()
+external_new_window();
+</script>
+	
+  </body>
+</html>

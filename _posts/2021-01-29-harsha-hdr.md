@@ -6,6 +6,7 @@ author: Harsha S. Bhat
 math: false
 tags:
   - HDR
+  - Presentation
 hide: false
 ---
 Harsha defended his HDR thesis today.

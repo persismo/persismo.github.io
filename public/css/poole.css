@@ -51,7 +51,7 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 body {
@@ -101,7 +101,6 @@ h4, h5, h6 {
 
 h2:before {
     margin-right:10px;
-    content:"\A";
     width:10px;
     height:10px;
     border-radius:50%;
@@ -234,8 +233,8 @@ blockquote p:last-child {
 
 img {
   display: block;
-  max-width: 100%;
-  margin: 0 0 1rem;
+  max-width: 60%;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
