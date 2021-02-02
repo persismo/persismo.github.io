@@ -45,16 +45,13 @@ $$
 $$
 
 Each of the above equations represents as 2D Mohr's circle when equated to zero. 
-For example, $$ \tau^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3)  = 0 $$ represents a
-Mohr's circle in 2D whose end points are $$(\sigma_2,\sigma_3)$$. This is the smallest Mohr's circle.
-Thus the first equation is true everywhere outside the circle. The second equation is 
-true everywhere inside the Mohr's circle whose end points are $$(\sigma_1,\sigma_3)$$. 
-This is the largest Mohr's circle. Following these lines of argument we thus can show that, to satisfy all 
-of the above equations simultaneously, any point $$(\sigma_n,\tau_n)$$ must lie in the region bounded
+For example, $$ \tau^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3)  = 0 $$ represents a Mohr's circle in 2D whose end points are $$(\sigma_2,\sigma_3)$$. This is the smallest Mohr's circle. Thus the first equation is true everywhere outside the circle. 
+
+The second equation is true everywhere inside the Mohr's circle whose end points are $$(\sigma_1,\sigma_3)$$. This is the largest Mohr's circle. Following these lines of argument we thus can show that, to satisfy all of the above equations simultaneously, any point $$(\sigma_n,\tau_n)$$ must lie in the region bounded
 by the three circles, the green shaded region below.
 
 ![3D Mohr's circle](/images/posts/mohr.png)
-_3D Mohr's Circle. Image from [Wikipedia](https://en.wikipedia.org/wiki/Mohr%27s_circle)_
+_3D Mohr's Circle. Image from [Wikipedia]https://en.wikipedia.org/wiki/Mohr%27s_circle)_
 
 ## Coulomb Stress on Fault Planes of Known Orientation
 
