@@ -11,8 +11,7 @@ hide: false
 I am basing this on my old notes and _Bhat et al. (2007)_. Contact me for the relevant Matlab codes.
 
 Assume, without loss of any generality, that the co-ordinate system is
-aligned with the principal stresses, $$\sigma_1, \sigma_2, \sigma_3$$. Let $$ (n_1,n_2,n_3) $$ be the components 
-of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let $$\sigma_1 \ge \sigma_2 \ge \sigma_3$$.
+aligned with the principal stresses, $$\sigma_1, \sigma_2, \sigma_3$$. Let $$ (n_1,n_2,n_3) $$ be the components of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let $$\sigma_1 \ge \sigma_2 \ge \sigma_3$$.
 
 ![3D Mohr's circle](/images/posts/mohrsetup.png)
 _Geometry_
@@ -20,22 +19,21 @@ _Geometry_
 Then, the normal and shear tractions are given by,
 
 $$
-\sigma_n = \sigma_{ij}n_i n_j \
-\tau_n = \sqrt{(\sigma_{ij}n_j)^2 - \sigma_n^2} \
+\sigma_n = \sigma_{ij}n_i n_j \\
+\tau_n = \sqrt{(\sigma_{ij}n_j)^2 - \sigma_n^2} \\
 n_1^2 + n_2^2 + n_3^2 = 1
 $$
 
-Note here that $$\tau$$ is the magnitude of the shear traction vector.
-The above is a set of linear simultaneous equations in $$ n_1^2, n_2^2 $$ and $$ n_3^2 $$. The 
+Note here that $$\tau$$ is the magnitude of the shear traction vector. The above is a set of linear simultaneous equations in $$ n_1^2, n_2^2 $$ and $$ n_3^2 $$. The 
 solution to which is trivial to obtain.
 
 $$
 n_1^2 = \dfrac{\tau_n^2 + 
-(\sigma_n-\sigma_2)(\sigma_n-\sigma_3)}{(\sigma_1-\sigma_2)(\sigma_1-\sigma_3)} \ge 0 \
+(\sigma_n-\sigma_2)(\sigma_n-\sigma_3)}{(\sigma_1-\sigma_2)(\sigma_1-\sigma_3)} \ge 0 \\
 n_2^2 = \dfrac{\tau_n^2 + 
-(\sigma_n-\sigma_3)(\sigma_n-\sigma_1)}{(\sigma_2-\sigma_3)(\sigma_2-\sigma_1)} \ge 0 \
+(\sigma_n-\sigma_3)(\sigma_n-\sigma_1)}{(\sigma_2-\sigma_3)(\sigma_2-\sigma_1)} \ge 0 \\
 n_3^2 = \dfrac{\tau_n^2 + 
-(\sigma_n-\sigma_1)(\sigma_n-\sigma_2)}{(\sigma_3-\sigma_1)(\sigma_3-\sigma_2)} \ge 0 \
+(\sigma_n-\sigma_1)(\sigma_n-\sigma_2)}{(\sigma_3-\sigma_1)(\sigma_3-\sigma_2)} \ge 0
 $$
 
 Now note that, $$\sigma_1 \ge \sigma_2 \ge \sigma_3$$. Thus we get,
