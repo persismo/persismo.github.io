@@ -51,7 +51,7 @@ The second equation is true everywhere inside the Mohr's circle whose end points
 by the three circles, the green shaded region below.
 
 ![3D Mohr's circle](/images/posts/mohr.png)
-_3D Mohr's Circle. Image from [Wikipedia]https://en.wikipedia.org/wiki/Mohr%27s_circle)_
+_3D Mohr's Circle. Image from [Wikipedia](https://en.wikipedia.org/wiki/Mohr%27s_circle)_
 
 ## Coulomb Stress on Fault Planes of Known Orientation
 
