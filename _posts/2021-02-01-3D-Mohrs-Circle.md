@@ -39,9 +39,9 @@ $$
 Now note that, $$\sigma_1 \ge \sigma_2 \ge \sigma_3$$. Thus we get,
 
 $$
-\tau_n^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3) \ge 0 \
-\tau_n^2 + (\sigma_n-\sigma_3)(\sigma_n-\sigma_1) \le 0 \
-\tau_n^2 + (\sigma_n-\sigma_1)(\sigma_n-\sigma_2) \ge 0 \
+\tau_n^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3) \ge 0 \\
+\tau_n^2 + (\sigma_n-\sigma_3)(\sigma_n-\sigma_1) \le 0 \\
+\tau_n^2 + (\sigma_n-\sigma_1)(\sigma_n-\sigma_2) \ge 0
 $$
 
 Each of the above equations represents as 2D Mohr's circle when equated to zero. 
