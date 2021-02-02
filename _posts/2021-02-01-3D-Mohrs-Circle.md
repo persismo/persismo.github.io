@@ -152,14 +152,13 @@ The shear and normal stresses on these planes are then given
 by
 
 $$
-\begin{eqnarray} \tau &=& \frac{(\sigma_1-\sigma_3)}{2}\sin2\beta
-\nonumber \ \sigma &=&
-\frac{(\sigma_1+\sigma_3)}{2}+\frac{(\sigma_1-\sigma_3)}{2}\cos2\beta
+\begin{eqnarray} 
+\tau &=& \frac{(\sigma_1-\sigma_3)}{2}\sin2\beta \\
+\sigma &=& \frac{(\sigma_1+\sigma_3)}{2}+\frac{(\sigma_1-\sigma_3)}{2}\cos2\beta
 \end{eqnarray}
 $$
 
-where $\sigma_1\ge\sigma_2\ge\sigma_3$ are the principal
-stresses, and (like $\sigma$) are positive if tensile.
+where $\sigma_1\ge\sigma_2\ge\sigma_3$ are the principal stresses, and (like $\sigma$) are positive if tensile.
 
 ### Application to plane strain in the $x-y$ plane aligned with the earth's surface
 
@@ -212,12 +211,11 @@ vectors in the direction of slip on the $\Sigma^+_{1/2}$ planes
 respectively. Then
 
 $$
-\begin{eqnarray} \vec{\xi_1} &=& \vec{\nu_3}\cos \ (\pi/4-\varphi/2) +
-\vec{\nu_1}\sin \ (\pi/4-\varphi/2)\ \vec{n_1} &=& -\vec{\nu_3}\cos \
-(\pi/4+\varphi/2) + \vec{\nu_1}\sin \ (\pi/4+\varphi/2) \ \vec{\xi_2}
-&=& \vec{\nu_3}\cos \ (\pi/4-\varphi/2) - \vec{\nu_1}\sin \
-(\pi/4-\varphi/2)\ \vec{n_2} &=& -\vec{\nu_3}\cos \ (\pi/4+\varphi/2) -
-\vec{\nu_1}\sin \ (\pi/4+\varphi/2) \end{eqnarray}
+\begin{eqnarray} 
+\vec{\xi_1} &=& \vec{\nu_3}\cos(\pi/4-\varphi/2) + \vec{\nu_1}\sin(\pi/4-\varphi/2)\\ 
+\vec{n_1} &=& -\vec{\nu_3}\cos(\pi/4+\varphi/2) + \vec{\nu_1}\sin(\pi/4+\varphi/2) \\
+\vec{\xi_2} &=& \vec{\nu_3}\cos(\pi/4-\varphi/2) - \vec{\nu_1}\sin(\pi/4-\varphi/2)\\
+\vec{n_2} &=& -\vec{\nu_3}\cos(\pi/4+\varphi/2) - \vec{\nu_1}\sin(\pi/4+\varphi/2) \end{eqnarray}
 $$
 
 $\Delta CS$ is then calculated for each of the optimal planes
