@@ -68,8 +68,7 @@ right-handed rotation about the strike direction (i. e., angle from
 earth's surface at right of the strike direction to the fault plane).
 The positive strike direction is always chosen such that
 $0<\gamma\le90^{0}$. Let $\Sigma^+$ and $\Sigma^-$ to be the positive
-and the negative side of the fault plane respectively. $\Sigma^-$ is the footwall (or is assigned arbitrarily if $\gamma =
-90^{0}$).
+and the negative side of the fault plane respectively. $\Sigma^-$ is the footwall (or is assigned arbitrarily if $\gamma = 90^{0}$).
 
 Let $\vec{n}$ be the unit normal to the fault plane directed from
 $\Sigma^-$ to $\Sigma^+$. This will imply that any traction calculated
@@ -81,41 +80,37 @@ plane due to the $\Sigma^+$ plane.
 Looking at the above figure the $z$ axis component of $\vec{n}$ is
 $\cos\gamma$. The component of $\vec{n}$ on the $x-y$ plane is
 then $\sin\gamma$. Since this component is perpendicular to $\vec{s}$,
-the strike vector, the projections of $\vec{n}$ on the $x$ and $y$ axes are $\sin\phi\sin\gamma$ and $-\cos\phi\sin\gamma$
-respectively. Thus
+the strike vector, the projections of $\vec{n}$ on the $x$ and $y$ axes are $\sin\phi\sin\gamma$ and $-\cos\phi\sin\gamma$ respectively. Thus
 
 $$
-\begin{equation} \vec{n} =
-(\sin\phi\sin\gamma)\hat{i}+(-\cos\phi\sin\gamma)\hat{j}+(\cos\gamma)\hat{k} \end{equation}
+\vec{n} = 
+(\sin\phi\sin\gamma)\hat{i}+(-\cos\phi\sin\gamma)\hat{j}+(\cos\gamma)\hat{k}
 $$
 
-The unit vector acting along the strike direction is then
-given by 
+The unit vector acting along the strike direction is then given by 
 
 $$
-\begin{equation} \vec{s} =
-(\cos\phi)\hat{i}+(\sin\phi)\hat{j}+(0)\hat{k} \end{equation}
+\vec{s} =
+(\cos\phi)\hat{i}+(\sin\phi)\hat{j}+(0)\hat{k}
 $$
 
-Then the vector acting along the updip direction is simply
-given by $\vec{d} = \vec{n}\times\vec{s}$ which is 
+Then the vector acting along the updip direction is simply given by $\vec{d} = \vec{n}\times\vec{s}$ which is 
 
 $$
-\begin{equation}
 \vec{d} =
 (-\sin\phi\cos\gamma)\hat{i}+(\cos\phi\cos\gamma)\hat{j}+(\sin\gamma)
-\hat{k} \end{equation}
+\hat{k}
 $$
 
 The traction acting on the fault plane is then given by
 $T_i=\sigma_{ji}n_j$ where $\sigma_{ij}$ are the components of the
 stress tensor (tensile positive) in the original $x-y-z$
 coordinate system. The normal stress on the fault plane is then given by
-$\sigma=T_in_i$.
+$\sigma=T_i n_i$.
 
 The maximum shear stress acting on the plane is given by $\tau_{max} =
-\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_is_i)$ and $\tau_{d} (=
-T_id_i)$ are the shear stresses acting along the strike and the updip
+\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_i s_i)$ and $\tau_{d} (=
+T_i d_i)$ are the shear stresses acting along the strike and the updip
 directions respectively. Define rake angle ($\lambda$) as the angle
 between the unit slip vector, $\vec{\xi}$, (slip vector $\Delta \vec{u}$
 is defined = $\vec{u}^{+}-\vec{u}^{-}$ where $\vec{u}$ is the
