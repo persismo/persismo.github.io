@@ -8,20 +8,20 @@ tags:
   - Theory
 hide: false
 ---
-I am basing this on my old notes and *Bhat et al. (2007)*. Contact me for the relevant Matlab codes.
+I am basing this on my old notes and _Bhat et al. (2007)_. Contact me for the relevant Matlab codes.
 
 Assume, without loss of any generality, that the co-ordinate system is
 aligned with the principal stresses, $$\sigma_1, \sigma_2, \sigma_3$$. Let $$ (n_1,n_2,n_3) $$ be the components 
 of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let $$\sigma_1 \ge \sigma_2 \ge \sigma_3$$.
 
 ![3D Mohr's circle](/images/posts/mohrsetup.png)
-*Geometry*
+_Geometry_
 
 Then, the normal and shear tractions are given by,
 
 $$
-\sigma*n = \sigma*{ij}n*i n_j \
-\tau_n = \sqrt{(\sigma*{ij}n_j)^2 - \sigma_n^2} \
+\sigma_n = \sigma_{ij}n_i n_j \
+\tau_n = \sqrt{(\sigma_{ij}n_j)^2 - \sigma_n^2} \
 n_1^2 + n_2^2 + n_3^2 = 1
 $$
 
@@ -56,7 +56,7 @@ of the above equations simultaneously, any point $$(\sigma_n,\tau_n)$$ must lie 
 by the three circles, the green shaded region below.
 
 ![3D Mohr's circle](/images/posts/mohr.png)
-*3D Mohr's Circle. Image from [Wikipedia](https://en.wikipedia.org/wiki/Mohr%27s_circle)*
+_3D Mohr's Circle. Image from [Wikipedia](https://en.wikipedia.org/wiki/Mohr%27s_circle)_
 
 ## Coulomb Stress on Fault Planes of Known Orientation
 
@@ -113,13 +113,13 @@ $$
 $$
 
 The traction acting on the fault plane is then given by
-$T*i=\sigma*{ji}n*j$ where $\sigma*{ij}$ are the components of the
+$T_i=\sigma_{ji}n_j$ where $\sigma_{ij}$ are the components of the
 stress tensor (tensile positive) in the original $x-y-z$
 coordinate system. The normal stress on the fault plane is then given by
 $\sigma=T_in_i$.
 
-The maximum shear stress acting on the plane is given by $\tau*{max} =
-\sqrt{\tau*{s}^2+\tau*d^2}$ where $\tau*{s} (= T*is_i)$ and $\tau*{d} (=
+The maximum shear stress acting on the plane is given by $\tau_{max} =
+\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_is_i)$ and $\tau_{d} (=
 T_id_i)$ are the shear stresses acting along the strike and the updip
 directions respectively. Define rake angle ($\lambda$) as the angle
 between the unit slip vector, $\vec{\xi}$, (slip vector $\Delta \vec{u}$
@@ -137,8 +137,8 @@ result in pure left or right lateral faulting respectively and a rake
 angle of $-\pi/2$ or $\pi/2$ would result in pure normal or thrust
 faulting respectively.
 
-The Coulomb Stress ($CS$) is now given by  $CS=\tau+f*{s}\sigma$ where
-$f*{s}$ is the static friction coefficient of the fault plane. $\tau$ is
+The Coulomb Stress ($CS$) is now given by  $CS=\tau+f_{s}\sigma$ where
+$f_{s}$ is the static friction coefficient of the fault plane. $\tau$ is
 positive when slip occurs in the direction of the unit slip vector and
 $\sigma$ is positive when the fault is unclamped.
 
@@ -173,14 +173,14 @@ stresses, and (like $\sigma$) are positive if tensile.
 
 ### Application to plane strain in the $x-y$ plane aligned with the earth's surface
 
-#### Case 1: $\sigma*1=\sigma*{zz}$ (least compressive stress normal to the surface).
+#### Case 1: $\sigma_1=\sigma_{zz}$ (least compressive stress normal to the surface).
 
 This case results in pure thrust faulting and both the conjugate planes are thrust faults. The strike of
 the two planes are along $\pm\vec{\nu_2}$ where $\vec{\nu_2}$ is the
 eigen-vector corresponding to the intermediate principal stress,
 $\sigma_2$. The dip is $\pi/4-\varphi/2$.
 
-#### Case 2: $\sigma*2=\sigma*{zz}$ (least compressive stress parallel to the surface)
+#### Case 2: $\sigma_2=\sigma_{zz}$ (least compressive stress parallel to the surface)
 
 This case results in
 strike-slip faulting and the conjugate planes strike left laterally and
@@ -188,7 +188,7 @@ right laterally. The strike of the two planes makes an angle of
 $\pm(\pi/4-\varphi/2)$ with the maximum compressive stress ($\sigma_3$)
 direction. The dip is $\pi/2$.
 
-#### Case 3: $\sigma*3=\sigma*{zz}$ (most compressive stress normal to the surface).
+#### Case 3: $\sigma_3=\sigma_{zz}$ (most compressive stress normal to the surface).
 
 This case results in pure normal
 faulting and both the conjugate planes are normal faults. The strike of
@@ -200,25 +200,25 @@ $\sigma_2$. The dip is $\pi/4+\varphi/2$.
 
 #### Case when fault plane and candidate direction of slip is known
 
-Let $\sigma*{ij}^{0}$ be the initial stress state (in the $x-y-z$ system) and
-$\Delta\sigma*{ij}$ be the perturbation to the stress-field due to an
+Let $\sigma_{ij}^{0}$ be the initial stress state (in the $x-y-z$ system) and
+$\Delta\sigma_{ij}$ be the perturbation to the stress-field due to an
 earthquake rupture. Then $\Delta CS$ is given by $\Delta CS =
-\Delta\tau+f*{s}\Delta\sigma$ where $\Delta\tau$ and $\Delta\sigma$ are
-given by $\Delta\tau=\Delta\sigma*{ij}n*i \xi_j$ and $\Delta\sigma =
-\Delta\sigma*{ij}n_in_j$. The vectors $\vec{n}$ and $\vec{\xi}$ are
+\Delta\tau+f_{s}\Delta\sigma$ where $\Delta\tau$ and $\Delta\sigma$ are
+given by $\Delta\tau=\Delta\sigma_{ij}n_i \xi_j$ and $\Delta\sigma =
+\Delta\sigma_{ij}n_in_j$. The vectors $\vec{n}$ and $\vec{\xi}$ are
 defined in the first section.
 
 #### Case when fault planes are optimally oriented
 
 We first begin by determining the conjugate failure planes for the total
-stress state i.e. for $\sigma*{ij}=\sigma*{ij}^0+\Delta\sigma*{ij}$. Let
+stress state i.e. for $\sigma_{ij}=\sigma_{ij}^0+\Delta\sigma_{ij}$. Let
 $\vec{\nu_1}$ and $\vec{\nu_3}$ be the eigen-vectors associated with the
 minimum and maximum principal stresses respectively of the total stress
 state. The failure plane normals are then obtained by rotating
 $\vec{\nu_3}$ about $\vec{\nu_2}$ by an angle of $\pm(\pi/4+\varphi/2)$.
 Let $\vec{n_1}$ and $\vec{n_2}$ be the outward unit normals to the
 conjugate planes and $\vec{ \xi_1}$ and $\vec{\xi_2}$ be the unit
-vectors in the direction of slip on the $\Sigma^+*{1/2}$ planes
+vectors in the direction of slip on the $\Sigma^+_{1/2}$ planes
 respectively. Then
 
 $$
@@ -231,21 +231,21 @@ $$
 $$
 
 $\Delta CS$ is then calculated for each of the optimal planes
-by $\Delta CS = \Delta\tau+f*{s}\Delta\sigma$ where $\Delta\tau$ and
-$\Delta\sigma$ are given by $\Delta\tau=\Delta\sigma*{ij}n*i\xi_j$ and
-$\Delta\sigma = \Delta\sigma*{ij}n*in_j$. $n_i$, $\xi_i$ are the
+by $\Delta CS = \Delta\tau+f_{s}\Delta\sigma$ where $\Delta\tau$ and
+$\Delta\sigma$ are given by $\Delta\tau=\Delta\sigma_{ij}n_i\xi_j$ and
+$\Delta\sigma = \Delta\sigma_{ij}n_in_j$. $n_i$, $\xi_i$ are the
 components of the unit normal and unit slip vectors respectively for
 each of the optimal planes. The maximum of the two $\Delta CS$ values is
 then sometimes identified as the plane more likely to slip due to an
 earthquake rupture, although we see no firm basis for that. However,
 this is not the only way the change in Coulomb stress on optimal planes
 be identified. The different conjugate fault plane orientations can be
-determined for stress states both before ($\sigma*{ij}^{0}$) and after
+determined for stress states both before ($\sigma_{ij}^{0}$) and after
 the rupture ($\sigma_{ij}$) and then the Coulomb stress changes can be
 evaluated as
 
 $$
-\Delta CS = {CS}*{optimal}^{\sigma^{0}+\Delta\sigma}-{CS}*{optimal}^{\sigma^{0}}
+\Delta CS = {CS}_{optimal}^{\sigma^{0}+\Delta\sigma}-{CS}_{optimal}^{\sigma^{0}}
 $$
 
 This would give a unique value of $\Delta CS$ regardless of the optimal
