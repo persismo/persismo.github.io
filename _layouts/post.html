@@ -10,8 +10,8 @@ layout: default
 </div>
 
 <hr>
-{% for tag_name in page.tags %}
 <h3> TAGS </h3>
+{% for tag_name in page.tags %}
 <div class="tag">
   <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }}</a>
 </div>
