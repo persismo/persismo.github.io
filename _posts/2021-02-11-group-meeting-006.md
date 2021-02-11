@@ -12,7 +12,7 @@ Ekeabino presented his work on the deformation localization in a compressional r
 
 The meeting took place at ISTeP, with the participation of Laeticia Le Pourhiet, Laurent Jolivet and Nadaya Cubas. 
 
-The slides are available [here](https://www.dropbox.com/s/omokpu9fu92k7b0/Towards%20localization%20in%20a%20compressive%20regime_updated.pdf?dl=0). And some cool videos of Ekeabinos numerical results are available [overall Temperature](https://www.dropbox.com/s/955ldtfai7devwy/Overall_Temperature_zoom.mov?dl=0), [shear stress](https://www.dropbox.com/s/wzcsmwacnuntgfj/shearstress_sigma12_zoom.mov?dl=0) and [strain rate](https://www.dropbox.com/s/py1du6ru3yqnli2/strainrate_sigma22_zoom.mov?dl=0). 
+The slides are available [here](https://www.dropbox.com/s/omokpu9fu92k7b0/Towards%20localization%20in%20a%20compressive%20regime_updated.pdf?dl=0). And some videos of Ekeabinos numerical results are available [overall Temperature](https://www.dropbox.com/s/955ldtfai7devwy/Overall_Temperature_zoom.mov?dl=0), [shear stress](https://www.dropbox.com/s/wzcsmwacnuntgfj/shearstress_sigma12_zoom.mov?dl=0) and [strain rate](https://www.dropbox.com/s/py1du6ru3yqnli2/strainrate_sigma22_zoom.mov?dl=0). 
 
 
 
