@@ -19,4 +19,4 @@ The presentations is available [here](https://www.dropbox.com/scl/fi/2ku6uloi7n3
 
 | Date           | Speaker              | Location |
 | -------------- | -------------------- | -------- |
-| Mar 11         | Roxane Ferry         | ENS      |
+| Mar 18         | Roxane Ferry         | ENS      |
