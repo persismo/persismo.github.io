@@ -124,6 +124,12 @@ ul, ol, dl {
   margin-bottom: 1rem;
 }
 
+/* Lists */
+li {
+  margin-top: 0;
+  margin-left: -20px;
+}
+
 dt {
   font-weight: bold;
 }

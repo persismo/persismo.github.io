@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="http://localhost:4000/public/css/team.css">
   <link rel="stylesheet" href="http://localhost:4000/public/css/pubs.css">
   <link rel="stylesheet" href="http://localhost:4000/public/css/tags.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/posts.css">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -83,13 +84,12 @@
       <div class="container content">
         <div class="post">
   <h1 class="post-title">3D Mohr's Circle and Coulomb Stress Change</h1>
-  <span class="post-date"> by Harsha S. Bhat | <a href="https://persismo.netlify.app/admin/#/collections/post/entries/2021-02-01-3d-mohr-s-circle-and-coulomb-stress-change">EDIT</a></span>
+  <span class="post-date">01 Feb 2021 by Harsha S. Bhat | <a href="https://persismo.netlify.app/admin/#/collections/post/entries/2021-02-01-3d-mohr-s-circle-and-coulomb-stress-change">EDIT</a></span>
 
-  <p>I am basing this on my old notes and <em>Bhat et al. (2007)</em>.</p>
+  <p>I am basing this on my old notes and <em>Bhat et al. (2007)</em>. Contact me for the relevant Matlab codes.</p>
 
 <p>Assume, without loss of any generality, that the co-ordinate system is
-aligned with the principal stresses, \(\sigma_1, \sigma_2, \sigma_3\). Let \((n_1,n_2,n_3)\) be the components 
-of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let \(\sigma_1 \ge \sigma_2 \ge \sigma_3\).</p>
+aligned with the principal stresses, \(\sigma_1, \sigma_2, \sigma_3\). Let \((n_1,n_2,n_3)\) be the components of a unit vector, normal to a plane, whose basis are the principal stresses. Further, let \(\sigma_1 \ge \sigma_2 \ge \sigma_3\).</p>
 
 <p><img src="/images/posts/mohrsetup.png" alt="3D Mohr's circle" />
 <em>Geometry</em></p>
@@ -100,8 +100,7 @@ of a unit vector, normal to a plane, whose basis are the principal stresses. Fur
 \tau_n = \sqrt{(\sigma_{ij}n_j)^2 - \sigma_n^2} \\
 n_1^2 + n_2^2 + n_3^2 = 1\]
 
-<p>Note here that \(\tau\) is the magnitude of the shear traction vector.
-The above is a set of linear simultaneous equations in \(n_1^2, n_2^2\) and \(n_3^2\). The 
+<p>Note here that \(\tau\) is the magnitude of the shear traction vector. The above is a set of linear simultaneous equations in \(n_1^2, n_2^2\) and \(n_3^2\). The 
 solution to which is trivial to obtain.</p>
 
 \[n_1^2 = \dfrac{\tau_n^2 + 
@@ -109,21 +108,18 @@ solution to which is trivial to obtain.</p>
 n_2^2 = \dfrac{\tau_n^2 + 
 (\sigma_n-\sigma_3)(\sigma_n-\sigma_1)}{(\sigma_2-\sigma_3)(\sigma_2-\sigma_1)} \ge 0 \\
 n_3^2 = \dfrac{\tau_n^2 + 
-(\sigma_n-\sigma_1)(\sigma_n-\sigma_2)}{(\sigma_3-\sigma_1)(\sigma_3-\sigma_2)} \ge 0 \\\]
+(\sigma_n-\sigma_1)(\sigma_n-\sigma_2)}{(\sigma_3-\sigma_1)(\sigma_3-\sigma_2)} \ge 0\]
 
 <p>Now note that, \(\sigma_1 \ge \sigma_2 \ge \sigma_3\). Thus we get,</p>
 
 \[\tau_n^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3) \ge 0 \\
 \tau_n^2 + (\sigma_n-\sigma_3)(\sigma_n-\sigma_1) \le 0 \\
-\tau_n^2 + (\sigma_n-\sigma_1)(\sigma_n-\sigma_2) \ge 0 \\\]
+\tau_n^2 + (\sigma_n-\sigma_1)(\sigma_n-\sigma_2) \ge 0\]
 
 <p>Each of the above equations represents as 2D Mohr’s circle when equated to zero. 
-For example, \(\tau^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3)  = 0\) represents a
-Mohr’s circle in 2D whose end points are \((\sigma_2,\sigma_3)\). This is the smallest Mohr’s circle.
-Thus the first equation is true everywhere outside the circle. The second equation is 
-true everywhere inside the Mohr’s circle whose end points are \((\sigma_1,\sigma_3)\). 
-This is the largest Mohr’s circle. Following these lines of argument we thus can show that, to satisfy all 
-of the above equations simultaneously, any point \((\sigma_n,\tau_n)\) must lie in the region bounded
+For example, \(\tau^2 + (\sigma_n-\sigma_2)(\sigma_n-\sigma_3)  = 0\) represents a Mohr’s circle in 2D whose end points are \((\sigma_2,\sigma_3)\). This is the smallest Mohr’s circle. Thus the first equation is true everywhere outside the circle.</p>
+
+<p>The second equation is true everywhere inside the Mohr’s circle whose end points are \((\sigma_1,\sigma_3)\). This is the largest Mohr’s circle. Following these lines of argument we thus can show that, to satisfy all of the above equations simultaneously, any point \((\sigma_n,\tau_n)\) must lie in the region bounded
 by the three circles, the green shaded region below.</p>
 
 <p><img src="/images/posts/mohr.png" alt="3D Mohr's circle" />
@@ -144,9 +140,7 @@ right-handed rotation about the strike direction (i. e., angle from
 earth’s surface at right of the strike direction to the fault plane).
 The positive strike direction is always chosen such that
 $0&lt;\gamma\le90^{0}$. Let $\Sigma^+$ and $\Sigma^-$ to be the positive
-and the negative side of the fault plane respectively [Figure A1a];
-$\Sigma^-$ is the footwall (or is assigned arbitrarily if $\gamma =
-90^{0}$).</p>
+and the negative side of the fault plane respectively. $\Sigma^-$ is the footwall (or is assigned arbitrarily if $\gamma = 90^{0}$).</p>
 
 <p>Let $\vec{n}$ be the unit normal to the fault plane directed from
 $\Sigma^-$ to $\Sigma^+$. This will imply that any traction calculated
@@ -158,37 +152,31 @@ plane due to the $\Sigma^+$ plane.</p>
 <p>Looking at the above figure the $z$ axis component of $\vec{n}$ is
 $\cos\gamma$. The component of $\vec{n}$ on the $x-y$ plane is
 then $\sin\gamma$. Since this component is perpendicular to $\vec{s}$,
-the strike vector, the projections of $\vec{n}$ on the \textbf{x} and
-\textbf{y} axes are $\sin\phi\sin\gamma$ and $-\cos\phi\sin\gamma$
-respectively. Thus</p>
+the strike vector, the projections of $\vec{n}$ on the $x$ and $y$ axes are $\sin\phi\sin\gamma$ and $-\cos\phi\sin\gamma$ respectively. Thus</p>
 
-\[\begin{equation} \vec{n} =
-(\sin\phi\sin\gamma)\hat{i}+(-\cos\phi\sin\gamma)\hat{j}+(\cos\gamma)\
-hat{k} \end{equation}\]
+\[\vec{n} = 
+(\sin\phi\sin\gamma)\hat{i}+(-\cos\phi\sin\gamma)\hat{j}+(\cos\gamma)\hat{k}\]
 
-<p>The unit vector acting along the strike direction is then
-given by</p>
+<p>The unit vector acting along the strike direction is then given by</p>
 
-\[\begin{equation} \vec{s} =
-(\cos\phi)\hat{i}+(\sin\phi)\hat{j}+(0)\hat{k} \end{equation}\]
+\[\vec{s} =
+(\cos\phi)\hat{i}+(\sin\phi)\hat{j}+(0)\hat{k}\]
 
-<p>Then the vector acting along the updip direction is simply
-given by $\vec{d} = \vec{n}\times\vec{s}$ which is</p>
+<p>Then the vector acting along the updip direction is simply given by $\vec{d} = \vec{n}\times\vec{s}$ which is</p>
 
-\[\begin{equation}
-\vec{d} =
+\[\vec{d} =
 (-\sin\phi\cos\gamma)\hat{i}+(\cos\phi\cos\gamma)\hat{j}+(\sin\gamma)
-\hat{k} \end{equation}\]
+\hat{k}\]
 
 <p>The traction acting on the fault plane is then given by
 $T_i=\sigma_{ji}n_j$ where $\sigma_{ij}$ are the components of the
 stress tensor (tensile positive) in the original $x-y-z$
 coordinate system. The normal stress on the fault plane is then given by
-$\sigma=T_in_i$.</p>
+$\sigma=T_i n_i$.</p>
 
 <p>The maximum shear stress acting on the plane is given by $\tau_{max} =
-\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_is_i)$ and $\tau_{d} (=
-T_id_i)$ are the shear stresses acting along the strike and the updip
+\sqrt{\tau_{s}^2+\tau_d^2}$ where $\tau_{s} (= T_i s_i)$ and $\tau_{d} (=
+T_i d_i)$ are the shear stresses acting along the strike and the updip
 directions respectively. Define rake angle ($\lambda$) as the angle
 between the unit slip vector, $\vec{\xi}$, (slip vector $\Delta \vec{u}$
 is defined = $\vec{u}^{+}-\vec{u}^{-}$ where $\vec{u}$ is the
@@ -205,7 +193,7 @@ result in pure left or right lateral faulting respectively and a rake
 angle of $-\pi/2$ or $\pi/2$ would result in pure normal or thrust
 faulting respectively.</p>
 
-<p>The Coulomb Stress (CS) is now given by  $CS=\tau+f_{s}\sigma$ where
+<p>The Coulomb Stress ($CS$) is now given by  $CS=\tau+f_{s}\sigma$ where
 $f_{s}$ is the static friction coefficient of the fault plane. $\tau$ is
 positive when slip occurs in the direction of the unit slip vector and
 $\sigma$ is positive when the fault is unclamped.</p>
@@ -217,7 +205,7 @@ is assumed to be active after stress change.</p>
 <h2 id="coulomb-stress-cs-on-optimal-mohr-coulomb-planes">Coulomb Stress (CS) on optimal Mohr-Coulomb planes</h2>
 
 <p>From Mohr-Coulomb failure theory it is known that for optimally oriented
-planes for failure (planeson which CS is maximum) the unit normals make
+planes for failure (planes on which $CS$ is maximum) the unit normals make
 angles of $\beta = \pm(\pi/4+\varphi/2)$ (where $\tan\varphi=f_{s}$)
 with the maximum compressive stress direction, and their line of
 intersection aligns with the intermediate principal stress direction.
@@ -229,13 +217,12 @@ maximum and minimum compressive stress directions.</p>
 <p>The shear and normal stresses on these planes are then given
 by</p>
 
-\[\begin{eqnarray} \tau &amp;=&amp; \frac{(\sigma_1-\sigma_3)}{2}\sin2\beta
-\nonumber \\ \sigma &amp;=&amp;
-\frac{(\sigma_1+\sigma_3)}{2}+\frac{(\sigma_1-\sigma_3)}{2}\cos2\beta
+\[\begin{eqnarray} 
+\tau &amp;=&amp; \frac{(\sigma_1-\sigma_3)}{2}\sin2\beta \\
+\sigma &amp;=&amp; \frac{(\sigma_1+\sigma_3)}{2}+\frac{(\sigma_1-\sigma_3)}{2}\cos2\beta
 \end{eqnarray}\]
 
-<p>where $\sigma_1\ge\sigma_2\ge\sigma_3$ are the principal
-stresses, and (like $\sigma$) are positive if tensile.</p>
+<p>where $\sigma_1\ge\sigma_2\ge\sigma_3$ are the principal stresses, and (like $\sigma$) are positive if tensile.</p>
 
 <h3 id="application-to-plane-strain-in-the-x-y-plane-aligned-with-the-earths-surface">Application to plane strain in the $x-y$ plane aligned with the earth’s surface</h3>
 
@@ -287,12 +274,11 @@ conjugate planes and $\vec{ \xi_1}$ and $\vec{\xi_2}$ be the unit
 vectors in the direction of slip on the $\Sigma^+_{1/2}$ planes
 respectively. Then</p>
 
-\[\begin{eqnarray} \vec{\xi_1} &amp;=&amp; \vec{\nu_3}\cos \ (\pi/4-\varphi/2) +
-\vec{\nu_1}\sin \ (\pi/4-\varphi/2)\\ \vec{n_1} &amp;=&amp; -\vec{\nu_3}\cos \
-(\pi/4+\varphi/2) + \vec{\nu_1}\sin \ (\pi/4+\varphi/2) \\ \vec{\xi_2}
-&amp;=&amp; \vec{\nu_3}\cos \ (\pi/4-\varphi/2) - \vec{\nu_1}\sin \
-(\pi/4-\varphi/2)\\ \vec{n_2} &amp;=&amp; -\vec{\nu_3}\cos \ (\pi/4+\varphi/2) -
-\vec{\nu_1}\sin \ (\pi/4+\varphi/2) \end{eqnarray}\]
+\[\begin{eqnarray} 
+\vec{\xi_1} &amp;=&amp; \vec{\nu_3}\cos(\pi/4-\varphi/2) + \vec{\nu_1}\sin(\pi/4-\varphi/2)\\ 
+\vec{n_1} &amp;=&amp; -\vec{\nu_3}\cos(\pi/4+\varphi/2) + \vec{\nu_1}\sin(\pi/4+\varphi/2) \\
+\vec{\xi_2} &amp;=&amp; \vec{\nu_3}\cos(\pi/4-\varphi/2) - \vec{\nu_1}\sin(\pi/4-\varphi/2)\\
+\vec{n_2} &amp;=&amp; -\vec{\nu_3}\cos(\pi/4+\varphi/2) - \vec{\nu_1}\sin(\pi/4+\varphi/2) \end{eqnarray}\]
 
 <p>$\Delta CS$ is then calculated for each of the optimal planes
 by $\Delta CS = \Delta\tau+f_{s}\Delta\sigma$ where $\Delta\tau$ and
@@ -316,8 +302,8 @@ plane chosen in each of the stress states.</p>
 </div>
 
 <hr>
-
 <h3> TAGS </h3>
+
 <div class="tag">
   <a href="/tags/#theory"> Theory</a>
 </div>

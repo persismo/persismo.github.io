@@ -9,12 +9,12 @@
 
   <title>
     
-      Harsha HDR &middot; PERSISMO
+      Getting papers quickly from online sources &middot; PERSISMO
     
   </title>
 
   
-  <link rel="canonical" href="/http://localhost:4000/2021/01/29/harsha-hdr/">
+  <link rel="canonical" href="/http://localhost:4000/2021/02/09/getting-papers-quickly-from-online-sources/">
   
 
   <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
@@ -83,12 +83,34 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Harsha HDR</h1>
-  <span class="post-date">29 Jan 2021 by Harsha S. Bhat | <a href="https://persismo.netlify.app/admin/#/collections/post/entries/2021-01-29-harsha-hdr">EDIT</a></span>
+  <h1 class="post-title">Getting papers quickly from online sources</h1>
+  <span class="post-date">09 Feb 2021 by Harsha S. Bhat | <a href="https://persismo.netlify.app/admin/#/collections/post/entries/2021-02-09-getting-papers-quickly-from-online-sources">EDIT</a></span>
 
-  <p>Harsha defended his HDR thesis today.</p>
+  <p>Suppose you come across a manuscript through Google Scholar or some other source and arrive at the webpage of the journal. For example, here is an article that I read recently. <a href="https://epubs.siam.org/doi/abs/10.1137/20M1345153">https://epubs.siam.org/doi/abs/10.1137/20M1345153</a>. Clearly, clicking on the link to the PDF will not work. The fastest way to get to the PDF is using <a href="https://en.wikipedia.org/wiki/Bookmarklet">bookmarklets</a>. I have created the bookmarklets for INSU Bibliography thingammyjig and (wink wink) for Sci Hub.</p>
 
-<p>The thesis is available <a href="https://harshasbhat.github.io/files/Bhat2021a.pdf">here</a>. The slides are <a href="https://harshasbhat.github.io/files/Bhat2021b.pdf">here</a>. And the talk can be seen on <a href="https://youtu.be/WXfIwCO1wa0">Youtube</a>.</p>
+<p>Here is how to make it work.</p>
+
+<ul>
+  <li>Use a browser of your choice and create a new bookmark.</li>
+  <li>For the URL simply paste
+    <ul>
+      <li><code class="highlighter-rouge"> javascript:location.hostname=location.hostname+'.insu.bib.cnrs.fr' </code> for INSU</li>
+      <li><code class="highlighter-rouge"> javascript:location.hostname=location.hostname+'.sci-hub.st' </code> for SCIHUB</li>
+    </ul>
+  </li>
+  <li>Save the bookmark in a handy place. I put it on my bookmarks tab so that I can access it directly.</li>
+</ul>
+
+<p>Et Voila. You are set to go.</p>
+
+<p>To use it, simply go the page containing the article, <a href="https://epubs.siam.org/doi/abs/10.1137/20M1345153">https://epubs.siam.org/doi/abs/10.1137/20M1345153</a> and then click on one of the two bookmarklets you have created.</p>
+
+<p>For INSU you will be asked to log-in the first time you do it (use your JANUS identity) and then you don’t have to login again as long as the browser is open.</p>
+
+<p>For SciHub you get the PDF directly :)</p>
+
+<p>Enjoy reading papers.</p>
+
 
 </div>
 
@@ -96,11 +118,15 @@
 <h3> TAGS </h3>
 
 <div class="tag">
-  <a href="/tags/#hdr"> HDR</a>
+  <a href="/tags/#papers"> papers</a>
 </div>
 
 <div class="tag">
-  <a href="/tags/#presentation"> Presentation</a>
+  <a href="/tags/#scihub"> scihub</a>
+</div>
+
+<div class="tag">
+  <a href="/tags/#cnrs"> cnrs</a>
 </div>
 
 
