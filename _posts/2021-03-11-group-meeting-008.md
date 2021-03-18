@@ -12,11 +12,12 @@ During this group meeting, Joseph presented his masters thesis on how fault dama
 
 He also gave an overview of his PhD topic on the modeling of the physical properties of the fault zones during the seismic cycle, under the supervision of Laurent Jolivet, Marion Thomas and Harsha Bhat. 
 
-The presentations is available [here](https://www.dropbox.com/scl/fi/2ku6uloi7n37xkvd6sphh/PERSISMO-Group-Meeting_Flores_Joseph_final.pptx?dl=0&rlkey=diccachv4airi1zkvrb0c4m6m). 
+The presentation is available [here](https://www.dropbox.com/scl/fi/2ku6uloi7n37xkvd6sphh/PERSISMO-Group-Meeting_Flores_Joseph_final.pptx?dl=0&rlkey=diccachv4airi1zkvrb0c4m6m). 
 
+{% include video.html id="iyTaN_FRroo" caption="Joseph's talk" %}
 
 ### Upcoming Meetings
 
-| Date           | Speaker              | Location |
-| -------------- | -------------------- | -------- |
-| Mar 18         | Roxane Ferry         | ENS      |
+| Date   | Speaker      | Location |
+| ------ | ------------ | -------- |
+| Mar 18 | Roxane Ferry | ENS      |
