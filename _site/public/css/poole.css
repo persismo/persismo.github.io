@@ -49,9 +49,9 @@ body {
 
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
 body {
@@ -91,12 +91,20 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
-  margin-top: 1.5rem;
+  margin-top: 1.0rem;
   font-size: 1.25rem;
 }
-h4, h5, h6 {
+
+h4, h5 {
   margin-top: 1rem;
   font-size: 1rem;
+}
+
+h6 {
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+  font-size: 0.85rem;
+  font-weight: 300;
 }
 
 h2:before {
@@ -305,7 +313,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 37rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -346,6 +354,10 @@ tbody tr:nth-child(odd) th {
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
  */
+
+.postlist {
+margin-left: 1em;
+}
 
 .page,
 .post {
