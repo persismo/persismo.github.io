@@ -45,10 +45,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "'Roboto Mono', monospace;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
@@ -234,9 +236,13 @@ blockquote {
   margin: .8rem 0;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
+  width:auto;
+    display:table;
 }
 blockquote p:last-child {
   margin-bottom: 0;
+  width:auto;
+    display:table;
 }
 @media (min-width: 30em) {
   blockquote {

@@ -5,7 +5,7 @@
 {% if mem.funded == 1 %}
   {% assign star = '*' %}
 {% else %}
-  {% assign star = '†' %}
+  {% assign star = '+' %}
 {% endif %}
 <div class="member">
 
@@ -46,9 +46,9 @@
 {% for mem in site.data.team.postdoc %}
 {% assign star = '' %}
 {% if mem.funded == 1 %}
-  {% assign star = '*' %}
+  {% assign star = '' %}
 {% else %}
-  {% assign star = '†' %}
+  {% assign star = '*' %}
 {% endif %}
 <div class="member">
 
@@ -92,9 +92,9 @@
 <div class="member">
 {% assign star = '' %}
 {% if mem.funded == 1 %}
-  {% assign star = '*' %}
+  {% assign star = '' %}
 {% else %}
-  {% assign star = '†' %}
+  {% assign star = '*' %}
 {% endif %}
 
 	{% if mem.image %}
@@ -137,9 +137,9 @@
 {% for mem in site.data.team.masters %}
 {% assign star = '' %}
 {% if mem.funded == 1 %}
-  {% assign star = '*' %}
+  {% assign star = '' %}
 {% else %}
-  {% assign star = '†' %}
+  {% assign star = '*' %}
 {% endif %}
 <div class="member">
 
@@ -178,5 +178,4 @@
 
 {% endif %}
 
-<footnote>* Funded by the ERC project PERSISMO</footnote>
-<footnote>† Funded through other sources</footnote>
+<footnote>* Funded through other sources</footnote>
