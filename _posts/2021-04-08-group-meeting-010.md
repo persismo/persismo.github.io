@@ -6,6 +6,7 @@ author: "Michelle Almakari "
 math: false
 tags:
   - GroupMeeting
+  - GitHub
 hide: false
 ---
 During this group meeting, Roxane gave the rest of the group a very intersting tutorial on the use of Git and Github. 
