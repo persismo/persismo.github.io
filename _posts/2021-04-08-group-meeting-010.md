@@ -13,7 +13,7 @@ During this group meeting, Roxane gave the rest of the group a very intersting t
 
 The tutorial pdf is available [here](https://www.dropbox.com/s/rww24cwallzleas/git_tutorial.pdf?dl=0), as well as some cheat sheets [here](https://www.dropbox.com/s/ijhvqwgzwkono9l/git_cheat_sheet_1.pdf?dl=0) and [here](https://www.dropbox.com/s/06yewryfdnx22v9/git_cheat_sheet_2.pdf?dl=0). 
 
-Video recording is also available [here](https://www.dropbox.com/sh/5lg2yhzz2fizt3t/AACswdHPUx2mSm_3ih0I9nl0a?dl=0). 
+{% include video.html id="CqxGLXzoPuk" caption="Group meeting" %}
 
 
 ### Upcoming Meetings
