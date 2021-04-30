@@ -16,5 +16,5 @@ During this group meeting, Michelle gave an update about her current work on ben
 
 | Date     | Speaker           | Location |
 | -------- | ----------------- | -------- |
-| April 29 | Lucile Bruhat     | Remote   |
-| May    6 | Louise Jeandet    | Remote   |
+| May    6 | Lucile Bruhat     | Remote   |
+| May    20| Louise Jeandet    | Remote   |
