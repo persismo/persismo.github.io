@@ -1,19 +1,5 @@
 publications:
   - pubnum: null
-    author: A. Elbanna, M. Abdelmeguid, X. Ma, F. Amlani, H. S. Bhat, C. Synolakis &
-      A. J. Rosakis
-    editor: null
-    booktitle: ""
-    pdf: ElbannaAbdelmeguidMa2020s.pdf
-    arxiv: null
-    school: null
-    journal: Proc. Natl. Acad. Sci. USA
-    title: Anatomy of Strike-Slip Fault Tsunami Genesis
-    type: article
-    publisher: null
-    year: 2021
-    doi: 10.1073/pnas.2025632118
-  - pubnum: null
     title:     "Dominantly Aseismic Nucleation of Laboratory Earthquakes: A Quantitative Investigation"
     author:    S. Marty, H. S. Bhat, J. Aubry, E. Fukuyama, R. Madariaga & A. Schubnel
     year:    2021
@@ -43,3 +29,17 @@ publications:
     school:
     arxiv: 	1909.12672v3
     topics: "supershear, damage, fracture mechanics, numerical models, aftershocks"
+  - pubnum: null
+    author: A. Elbanna, M. Abdelmeguid, X. Ma, F. Amlani, H. S. Bhat, C. Synolakis &
+      A. J. Rosakis
+    editor: null
+    booktitle: ""
+    pdf: ElbannaAbdelmeguidMa2020s.pdf
+    arxiv: null
+    school: null
+    journal: Proc. Natl. Acad. Sci. USA
+    title: Anatomy of Strike-Slip Fault Tsunami Genesis
+    type: article
+    publisher: null
+    year: 2021
+    doi: 10.1073/pnas.2025632118

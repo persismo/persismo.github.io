@@ -24,4 +24,3 @@ kramdown:
   input: GFM
   entity_output: as_char
   hard_wrap: false
-
