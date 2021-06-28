@@ -17,3 +17,4 @@ During this group meeting, Louise gave an update about her current work.
 | Date     | Speaker           | Location |
 | -------- | ----------------- | -------- |
 | June 09  | Romain Jolivet    | ISTeP    |
+| June 23  | Pierpaolo Dubernet| ENS      |
