@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group Meeting 016
-bdate: June 9, 2021 3:30 PM
+bdate: June 23, 2021 3:30 PM
 author: "Michelle Almakari "
 math: false
 tags:
