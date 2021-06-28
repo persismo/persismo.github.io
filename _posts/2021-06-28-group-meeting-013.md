@@ -9,12 +9,11 @@ tags:
   - GitHub
 hide: false
 ---
-During this group meeting, Luciel gave an update about her current. 
+During this group meeting, Lucile gave an update about her current work. 
 
 
 ### Upcoming Meetings
 
 | Date     | Speaker           | Location |
 | -------- | ----------------- | -------- |
-| May    6 | Lucile Bruhat     | Remote   |
-| May    20| Louise Jeandet    | Remote   |
+| May    26| Louise Jeandet    | ENS      |
