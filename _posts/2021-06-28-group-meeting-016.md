@@ -10,7 +10,7 @@ tags:
 hide: false
 ---
 During this group meeting, Pierpaolo Dubernet gave a presentation on the specs, access and workload manager of the new Madariaga cluster. 
-Presentation is available [here](file:///Users/michellealmakari/PERSISMO-IDEAS%20Dropbox/Michelle%20Almakari/Group-meetings/pres-cluster.pdf). 
+Presentation is available [here](https://www.dropbox.com/s/13mcrjjgtcsin5c/pres-cluster.pdf?dl=0). 
 
 
 ### Upcoming Meetings
