@@ -11,4 +11,4 @@ It is a C++ library for Boundary Element with hierarchical matrices - with bindi
 
 First you need to clone locally the bigwham code from: https://c4science.ch/project/view/3198/
 
-Documentation to install it and bind it to python is available [here](https://www.dropbox.com/s/bs79qui437rch4h/Documentation_BigWham.pdf?dl=0)
+Documentation to install it and bind it to python is available [here](https://www.dropbox.com/s/bs79qui437rch4h/Documentation_BigWham.pdf?dl=0).
