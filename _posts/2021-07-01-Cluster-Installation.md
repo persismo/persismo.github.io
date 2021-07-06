@@ -19,14 +19,8 @@ July 1. DELL will install the remaning components on July 5.
 
 {% include video.html id="-XZNlYe2Vns" caption="Hardware Installation" %}
 
-
-
-
-
 TECH SPECS of **MADARIAGA**:
 
-* one master node
-* one NFS node
 * 8 «CPU» nodes 
   		- 2x AMD EPYC 7702 2GHz Rome per node
   		- 64 cores per node 
